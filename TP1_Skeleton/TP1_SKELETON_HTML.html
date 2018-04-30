@@ -18,7 +18,7 @@
 			<button type="button" name="AddToDo" id="AddToDo" onclick="Open_AddToDo()">AddToDo</button>
 			<select class="" name="">
 				<option id="placeholder_day" value="" disabled selected>day</option>
-				<option value="monday">monday</option>
+				<option value="Monday">Monday</option>
 				<option value="Tuesday">Tuesday</option>
 				<option value="Wednesday">Wednesday</option>
 				<option value="Thursday">Thursday</option>
@@ -63,11 +63,23 @@
 				<!-- Add ToDo Button View -->
 				<section id="writingFormContainer">
 					<img src="img/delete.png" onclick="Close_AddToDo()"/>
-					<div class="">
-
+					<div>
+						<select class="content_AddToDo" name="" id="content_AddToDo_1">
+							<option value="Monday">Monday</option>
+							<option value="Tuesday">Tuesday</option>
+							<option value="Wednesday">Wednesday</option>
+							<option value="Thursday">Thursday</option>
+							<option value="Friday">Friday</option>
+						</select>
 					</div>
-					<div class="">
-
+					<div>
+						<input class="content_AddToDo" type="text"  id="content_AddToDo_2"name="" value="" placeholder="title">
+					</div>
+					<div>
+						<input class="content_AddToDo" type="text" id="content_AddToDo_3" name="" value="" placeholder="content">
+					</div>
+					<div>
+						<button class="content_AddToDo" id="content_AddToDo_4" type="button" name="button" onclick="Add_AddToDo()">Add</button>
 					</div>
 				</section>
 			</div>
