@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>TODO in HTML5 Skeleton</title>
+<!-- CSS, JS External 정의 -->
+<link rel="stylesheet" type="text/css" href="TP1_SKELETON_CSS.css">
+<link rel="stylesheet" type="text/css" href="AddToDo_CSS.css">
+<script src="./TP1_SKELETON_JavaScript.js"></script>
+
+</head>
+
+<body>
+	<article>
+		<header>
+			<!-- Header (Add ToDo 버튼, keyword 검색) -->
+			<button type="button" name="AddToDo" id="AddToDo" onclick="Open_AddToDo()">AddToDo</button>
+			<select class="" name="">
+				<option id="placeholder_day" value="" disabled selected>day</option>
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+			</select>
+			<input type="text" placeholder="Enter your keyword here"name="" value="">
+		</header>
+
+		<main>
+			<!-- Middle Bar A~D, Display Area A~D -->
+			<section id="middleBar_mon" class="middle">
+				<section class="middleTop"><b>mon</b></section>
+				<section class="displayArea_mon"><b>월요일 목록</b></section>
+			</section>
+			<!--경계선-->
+			<div class="mainLine"></div>
+
+			<section id="middleBar_tue" class="middle">
+				<section class="middleTop"><b>tue</b></section>
+				<section class="displayArea_tue"><b>화요일 목록</b></section>
+			</section>
+			<div class="mainLine"></div>
+
+			<section id="middleBar_wed" class="middle">
+				<section class="middleTop"><b>wed</b></section>
+				<section class="displayArea_wed"><b>수요일 목록</b></section>
+			</section>
+			<div class="mainLine"></div>
+
+			<section id="middleBar_thu" class="middle">
+				<section class="middleTop"><b>thu</b></section>
+				<section class="displayArea_thu"><b>목요일 목록</b></section>
+			</section>
+			<div class="mainLine"></div>
+
+			<section id="middleBar_Fri" class="middle">
+				<section class="middleTop"><b>Fri</b></section>
+				<section class="displayArea_Fri"><b>금요일 목록</b></section>
+			</section>
+			<div id="modal">
+				<section id="writingTransparentBorder"></section>
+				<!-- Add ToDo Button View -->
+				<section id="writingFormContainer">
+					<img src="img/delete.png" onclick="Close_AddToDo()"/>
+					<div>
+						<select class="content_AddToDo" name="" id="content_AddToDo_1">
+							<option value="Monday">Monday</option>
+							<option value="Tuesday">Tuesday</option>
+							<option value="Wednesday">Wednesday</option>
+							<option value="Thursday">Thursday</option>
+							<option value="Friday">Friday</option>
+						</select>
+					</div>
+					<div>
+						<input class="content_AddToDo" type="text"  id="content_AddToDo_2"name="" value="" placeholder="title">
+					</div>
+					<div>
+						<input class="content_AddToDo" type="text" id="content_AddToDo_3" name="" value="" placeholder="content">
+					</div>
+					<div>
+						<button class="content_AddToDo" id="content_AddToDo_4" type="button" name="button" onclick="Add_AddToDo()">Add</button>
+					</div>
+				</section>
+			</div>
+		</main>
+	</article>
+</body>
+</html>
