@@ -108,19 +108,5 @@ main{
 /* Main End */
 
 /* modal Start*/
-.modal {
-	opacity: 0.6;
-  /* display: none; */
-  position: fixed;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background-color: black;
-  z-index: 2;
-	text-align: center;
-}
 
-#modal-content{
-	background-color: red;
-}
 /* modal End */

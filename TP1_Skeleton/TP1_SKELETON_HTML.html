@@ -7,6 +7,7 @@
 <!-- CSS, JS External 정의 -->
 <link rel="stylesheet" type="text/css" href="TP1_SKELETON_CSS.css">
 <link rel="stylesheet" type="text/css" href="AddToDo_CSS.css">
+<script src="./TP1_SKELETON_JavaScript.js"></script>
 
 </head>
 
@@ -14,7 +15,7 @@
 	<article>
 		<header>
 			<!-- Header (Add ToDo 버튼, keyword 검색) -->
-			<button type="button" name="AddToDo" id="AddToDo">AddToDo</button>
+			<button type="button" name="AddToDo" id="AddToDo" onclick="Open_AddToDo()">AddToDo</button>
 			<select class="" name="">
 				<option id="placeholder_day" value="" disabled selected>day</option>
 				<option value="monday">monday</option>
@@ -57,13 +58,20 @@
 				<section class="middleTop"><b>Fri</b></section>
 				<section class="displayArea_Fri"><b>금요일 목록</b></section>
 			</section>
-			<section id="writingTransparentBorder"></section>
-			<!-- Add ToDo Button View -->
-			<section id="writingFormContainer">
-				<img src="img/delete.png"/>
-			</section>
+			<div id="modal">
+				<section id="writingTransparentBorder"></section>
+				<!-- Add ToDo Button View -->
+				<section id="writingFormContainer">
+					<img src="img/delete.png" onclick="Close_AddToDo()"/>
+					<div class="">
+
+					</div>
+					<div class="">
+
+					</div>
+				</section>
+			</div>
 		</main>
 	</article>
 </body>
-
 </html>
