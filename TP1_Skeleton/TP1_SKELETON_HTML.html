@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>TODO in HTML5 Skeleton</title>
+<!-- CSS, JS External 정의 -->
+<link rel="stylesheet" type="text/css" href="TP1_SKELETON_CSS.css">
+<link rel="stylesheet" type="text/css" href="AddToDo_CSS.css">
+
+</head>
+
+<body>
+	<article>
+		<header>
+			<!-- Header (Add ToDo 버튼, keyword 검색) -->
+			<button type="button" name="AddToDo" id="AddToDo">AddToDo</button>
+			<select class="" name="">
+				<option id="placeholder_day" value="" disabled selected>day</option>
+				<option value="monday">monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+			</select>
+			<input type="text" placeholder="Enter your keyword here"name="" value="">
+		</header>
+
+		<main>
+			<!-- Middle Bar A~D, Display Area A~D -->
+			<section id="middleBar_mon" class="middle">
+				<section class="middleTop"><b>mon</b></section>
+				<section class="displayArea_mon"><b>월요일 목록</b></section>
+			</section>
+			<!--경계선-->
+			<div class="mainLine"></div>
+
+			<section id="middleBar_tue" class="middle">
+				<section class="middleTop"><b>tue</b></section>
+				<section class="displayArea_tue"><b>화요일 목록</b></section>
+			</section>
+			<div class="mainLine"></div>
+
+			<section id="middleBar_wed" class="middle">
+				<section class="middleTop"><b>wed</b></section>
+				<section class="displayArea_wed"><b>수요일 목록</b></section>
+			</section>
+			<div class="mainLine"></div>
+
+			<section id="middleBar_thu" class="middle">
+				<section class="middleTop"><b>thu</b></section>
+				<section class="displayArea_thu"><b>목요일 목록</b></section>
+			</section>
+			<div class="mainLine"></div>
+
+			<section id="middleBar_Fri" class="middle">
+				<section class="middleTop"><b>Fri</b></section>
+				<section class="displayArea_Fri"><b>금요일 목록</b></section>
+			</section>
+			<section id="writingTransparentBorder"></section>
+			<!-- Add ToDo Button View -->
+			<section id="writingFormContainer">
+				<img src="img/delete.png"/>
+			</section>
+		</main>
+	</article>
+</body>
+
+</html>
